@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "GowunDodum-Regular";
+    user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: calc(100vw - (100vw * 0.13 * 2));
+    height: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: calc(100vw * 0.13);
+    padding-right: calc(100vw * 0.13);
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.header-title {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.header-list-content {
+    line-height: 40px;
+    margin: 0 15px 0 15px;
+}
+
+.header-list-content:hover {
+    border-bottom: solid grey 3px;
+}
+
+.header-list-menu {
+    aspect-ratio: 1/1;
+    border: solid rgba(128, 128, 128, 0.2) 2.5px;
+    border-radius: 50%;
+    display: none;
+}
+
+.header-list-menu img {
+    padding: 5.5px;
+    width: 24px;
+    height: 24px;
+}
+
+.header-line-bottom {
+    position: absolute;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.3);
+    width: 100vw;
+    height: 1px;
+}
+
+.body-hello-world {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.recent-posts-list {
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header-list-content {
+        display: none;
+    }
+
+    .header-list-menu {
+        display: block;
+    }
+}
