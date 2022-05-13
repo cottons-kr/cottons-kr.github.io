@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="./blog.css">
         <title>cottons place</title>
     </head>
     <header>
@@ -14,27 +15,26 @@
                 <a class="header-list-content" href="/">HOME</a>
                 <a class="header-list-content" href="/about">ABOUT</a>
         
-                <div class="header-list-menu"><img src="./img/menu.svg" alt="hambergur-menu"></div>
+                <div class="header-list-menu"><img src="../img/menu.svg" alt="hambergur-menu"></div>
             </nav>
         </div>
         <hr class="header-line-bottom">
     </header>
     <body>
-        <p class="body-hello-world">Hello, world!</p>
-    
         <div class="app">
-            <div class="recent-posts-list">
-                <p class="posts-list-title">최근 게시글</p>
-                <div class="posts-list">
-                    <a href="./blog/첫 글.html">
-                        <div class="post">
-                            <h2 class="post-title">첫 글</h2>
-                            <p class="post-preview">이 블로그의 첫글이다. 여길 뭐로 채워볼까?</p>
-                            <p class="post-upload-date">2022. 05. 13</p>
-                        </div>
-                    </a>
+            <h1 class="post-title">첫 글</h1>
+            <p class="post-upload-date">2022. 05. 13</p>
+
+            <div class="post-area">
+                <p>이 블로그의 첫 글이다. 여길 무엇으로 채워볼까?</p>
+
+                <div class="code code-python">
+                    <p>print("python")</p>
+                    <p>import this</p>
+                    <p>"String"</p>
                 </div>
             </div>
         </div>
     </body>
+    <script src="./codeTheme.js"></script>
 </html>

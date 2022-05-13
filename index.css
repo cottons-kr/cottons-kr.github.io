@@ -12,6 +12,11 @@
     outline: none;
     font-family: "GowunDodum-Regular";
     user-select: none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
 }
 
 body {
